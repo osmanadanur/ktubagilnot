@@ -1,0 +1,382 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/arka" >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"     
+        android:orientation="vertical"
+        android:gravity="center" >
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/ktunot"
+        android:layout_gravity="center" />
+
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal" 
+        >
+
+        <EditText
+            android:id="@+id/vize"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:hint="@string/vizeNotu"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/final_not"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/finalNotu"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/sinif_ort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/sinifOrt"
+            android:gravity="right"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/standrt_spm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:hint="@string/stdSapma"
+            android:maxLength="7"
+            android:inputType="numberDecimal"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+     >
+
+    <Button
+        android:id="@+id/hesapla_buton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:scaleType="center"
+        android:background="@drawable/hes_button"
+        />
+
+    <Button
+        android:id="@+id/temizle_buton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/tem_button"
+        android:scaleType="center"
+        />
+
+
+</LinearLayout>
+</LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:orientation="vertical"
+        android:gravity="center" >
+<ImageView
+        android:id="@+id/harfnotu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:orientation="vertical"
+        android:gravity="center" >
+
+    
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Final/Bütünleme"
+        android:textStyle="bold"
+        android:background="#0066FF"
+        android:layout_marginTop="8dp"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Alınması Gereken Notlar"
+        android:textStyle="bold"
+        android:background="#0066FF"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:gravity="center" />
+
+<LinearLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+		android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="DC"
+        android:focusable="false"
+        android:textStyle="bold"
+        android:background="#3399FF"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:background="#FF6600"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:focusable="false"
+        android:text="CC"
+        android:textSize="15dp"
+        android:textStyle="bold" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:focusable="false"
+        android:text="CB"
+        android:background="#3399FF"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+<LinearLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center" >
+
+    <EditText
+        android:id="@+id/not_ort_yaz1"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+    android:id="@+id/not_ort_yaz2"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:background="#CCCCCC"
+        android:gravity="center"
+    android:ems="10"
+    android:textColor="@android:color/black"
+    android:textSize="15dp"
+    android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/not_ort_yaz3"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+<LinearLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center" >
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:background="#3399FF"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="BB"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:focusable="false"
+        android:background="#FF6600"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="BA"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#3399FF"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:ems="10"
+        android:focusable="false"
+        android:text="AA"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+<LinearLayout
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center" >
+
+    <EditText
+        android:id="@+id/not_ort_yaz4"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+    android:id="@+id/not_ort_yaz5"
+    android:layout_width="60dp"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:ems="10"
+    android:background="#CCCCCC"
+    android:gravity="center"
+    android:textColor="@android:color/black"
+    android:textSize="15dp"
+    android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/not_ort_yaz6"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+</LinearLayout>
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:gravity="bottom" >
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="bottom" >
+<Button
+    android:id="@+id/infoButton"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_gravity="bottom|right"
+    android:background="@drawable/info" />
+</LinearLayout>
+<LinearLayout
+       android:id="@+id/reklamAlani"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="bottom"
+       android:layout_gravity="bottom"
+       android:orientation="vertical" >
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>
